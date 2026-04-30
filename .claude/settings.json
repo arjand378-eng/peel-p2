@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ffprobe -v quiet -print_format json -show_format -show_streams \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/veo-video-1777328679520.mp4\")",
+      "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); f=d['format']; s=d['streams'][0]; print\\(f'Duration: {float\\(f[\\\\\"duration\\\\\"]\\):.1f}s | Resolution: {s[\\\\\"width\\\\\"]}x{s[\\\\\"height\\\\\"]} | Size: {int\\(f[\\\\\"size\\\\\"]\\)//1024//1024}MB'\\)\")",
+      "Bash(ffprobe \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/veo-video-1777328679520.mp4\")",
+      "Bash(ffprobe \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/WEBSITE PHOTOS/VIDEO-2026-04-06-19-45-10.mov\")",
+      "Bash(mkdir -p \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/.claude/skills\")",
+      "Bash(cp \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/PEEL EXCAVATION SERVICES/.claude/skills/gpt-taste-SKILL.md\" \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/.claude/skills/\")",
+      "Bash(cp \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/PEEL EXCAVATION SERVICES/.claude/skills/brutalist-SKILL.md\" \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/.claude/skills/\")",
+      "Bash(cp \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/PEEL EXCAVATION SERVICES/.claude/skills/output-SKILL.md\" \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/.claude/skills/\")",
+      "Bash(mkdir -p \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/peel-p2/public/images\")",
+      "Bash(mkdir -p \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/peel-p2/public/video\")",
+      "Bash(cp \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/WEBSITE PHOTOS/\"*.JPG \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/peel-p2/public/images/\")",
+      "Bash(cp \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/hero.mp4\" \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/peel-p2/public/video/hero.mp4\")",
+      "WebSearch",
+      "WebFetch(domain:www.pexels.com)",
+      "Bash(curl -sL \"https://images.pexels.com/photos/17171336/pexels-photo-17171336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\" -o pexels-demolition.jpg)",
+      "Bash(curl -sL \"https://images.pexels.com/photos/36606405/pexels-photo-36606405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\" -o pexels-foundation.jpg)",
+      "Bash(curl -sL \"https://images.pexels.com/photos/4140556/pexels-photo-4140556.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\" -o pexels-land-clearing.jpg)",
+      "Bash(curl -sL \"https://images.pexels.com/photos/1188553/pexels-photo-1188553.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1\" -o pexels-about-hero.jpg)",
+      "Bash(git checkout *)",
+      "Bash(mkdir -p \"/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/public/images/service-photos\")",
+      "Bash(cp '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/service photos/foundation excavation deep pit.jpg' '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/public/images/service-photos/foundation-excavation.jpg')",
+      "Bash(cp '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/service photos/basement excavation residential.jpg' '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/public/images/service-photos/basement-digging.jpg')",
+      "Bash(cp '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/service photos/inground pool excavation hole backyard.jpg' '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/public/images/service-photos/pool-excavation.jpg')",
+      "Bash(cp '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/service photos/site preparation grading construction.jpg' '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/public/images/service-photos/site-preparation.jpg')",
+      "Bash(cp '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/service photos/ basement excavation residential.jpg' '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/public/images/service-photos/basement-digging.jpg')",
+      "Bash(cp '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/service photos/ utility trench sewer pipe installation x.jpg' '/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/public/images/service-photos/trenching.jpg')",
+      "Bash(ffmpeg -y -i public/video/hero.mp4 -ss 00:00:01 -vframes 1 -q:v 4 -vf \"scale=1920:-1\" public/video/hero-poster.jpg)",
+      "Bash(sips -Z 1600 -s formatOptions 50 public/images/IMG_8780.JPG --out public/video/hero-poster.jpg)",
+      "Bash(sips -Z 1400 -s formatOptions 35 public/images/IMG_8780.JPG --out public/video/hero-poster.jpg)",
+      "Bash(npm uninstall *)",
+      "Bash(sips -g pixelWidth IMG_8779.JPG)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}
