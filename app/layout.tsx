@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Bebas_Neue, Barlow } from "next/font/google";
 import { Toaster } from "sonner";
 import "./globals.css";
@@ -16,6 +16,13 @@ const barlow = Barlow({
   variable: "--font-barlow",
   display: "swap",
 });
+
+export const viewport: Viewport = {
+  themeColor: "#0f0f0d",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 export const metadata: Metadata = {
   title: "Peel Excavation Services | Foundation Excavation & Demolition Contractors | GTA",

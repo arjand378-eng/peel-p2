@@ -25,15 +25,21 @@ export function Hero() {
       id="top"
       className="relative h-screen min-h-[640px] w-full overflow-hidden bg-background"
     >
-      {/* Background — dark until video is ready (desktop only) */}
+      {/* Background — poster paints instantly, video fades in when ready (desktop only) */}
       <div className="absolute inset-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: "url('/images/IMG_8784.JPG')" }}
+          aria-hidden="true"
+        />
         {showVideo && (
           <video
             autoPlay
             muted
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
+            poster="/images/IMG_8784.JPG"
             className="absolute inset-0 w-full h-full object-cover"
             aria-hidden="true"
           >

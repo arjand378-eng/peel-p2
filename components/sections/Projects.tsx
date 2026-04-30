@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "@/components/Reveal";
 
@@ -51,8 +52,13 @@ export function Projects() {
             <Reveal
               key={p.name}
               delay={i * 100}
-              className="group relative aspect-[4/3] overflow-hidden border border-border cursor-pointer"
+              className="group relative aspect-[4/3] overflow-hidden border border-border"
             >
+              <Link
+                href="/projects"
+                aria-label={`View all projects — ${p.name}`}
+                className="absolute inset-0 z-30"
+              />
               <Image
                 src={p.img}
                 alt={`${p.name} in ${p.location}`}
@@ -90,6 +96,16 @@ export function Projects() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal className="mt-14 flex justify-center">
+          <Link
+            href="/projects"
+            className="group inline-flex items-center gap-3 border border-primary/60 hover:border-primary hover:bg-primary hover:text-primary-foreground text-foreground px-7 py-4 text-sm uppercase tracking-[0.3em] transition-colors"
+          >
+            View all projects
+            <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+          </Link>
+        </Reveal>
       </div>
     </section>
   );
