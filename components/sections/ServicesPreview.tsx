@@ -16,19 +16,19 @@ const services = [
     title: "Site Preparation",
     desc: "Full site clearing, grading, and rough prep before any build begins.",
     href: "/services#site-preparation",
-    img: "/images/Photos/pexels-pixabay-162624.jpg",
+    img: "/images/photos/pexels-pixabay-162624.jpg",
   },
   {
     title: "Demolition",
     desc: "Controlled residential and commercial tear-downs with full debris removal.",
     href: "/services#demolition",
-    img: "/images/Photos/pexels-alesustinau-11518763.jpg",
+    img: "/images/photos/pexels-alesustinau-11518763.jpg",
   },
   {
     title: "Basement Digging",
     desc: "Walkout basements, full digs, and below-grade extensions to spec.",
     href: "/services#basement-digging",
-    img: "/images/Photos/pexels-peter-dyllong-2158803154-36815365.jpg",
+    img: "/images/photos/pexels-peter-dyllong-2158803154-36815365.jpg",
   },
   {
     title: "Trenching & Utilities",
@@ -40,13 +40,13 @@ const services = [
     title: "Land Grading",
     desc: "Rough and finish grading for drainage, pad prep, and build-ready lots.",
     href: "/services#land-grading",
-    img: "/images/Photos/pexels-borishamer-16075860.jpg",
+    img: "/images/photos/pexels-borishamer-16075860.jpg",
   },
   {
     title: "Lot Clearing",
     desc: "Trees, stumps, brush, and debris cleared. Site ready from day one.",
     href: "/services#lot-clearing",
-    img: "/images/Photos/pexels-zante-7080010.jpg",
+    img: "/images/photos/pexels-zante-7080010.jpg",
   },
   {
     title: "Pool Excavation",

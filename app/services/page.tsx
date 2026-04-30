@@ -90,7 +90,7 @@ const services = [
       "Drainage and waterproofing setup",
       "Coordination with concrete, framing, and waterproofing crews",
     ],
-    img: "/images/Photos/pexels-pixabay-162624.jpg",
+    img: "/images/photos/pexels-pixabay-162624.jpg",
     imgAlt: "Excavation for a below-grade garage structure",
   },
   {
@@ -204,7 +204,7 @@ const services = [
       "Post-demo grading and site cleanup",
       "Utility disconnect and abatement coordination",
     ],
-    img: "/images/Photos/pexels-alesustinau-11518763.jpg",
+    img: "/images/photos/pexels-alesustinau-11518763.jpg",
     imgAlt: "Demolition excavator tearing down a structure",
   },
   {
