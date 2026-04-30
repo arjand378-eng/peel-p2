@@ -32,7 +32,11 @@
       "Bash(sips -Z 1400 -s formatOptions 35 public/images/IMG_8780.JPG --out public/video/hero-poster.jpg)",
       "Bash(npm uninstall *)",
       "Bash(sips -g pixelWidth IMG_8779.JPG)",
-      "Bash(npx tsc *)"
+      "Bash(npx tsc *)",
+      "Bash(git -c user.email=\"dhillonarjan552@gmail.com\" -c user.name=\"arjand378-eng\" commit -m \"Initial commit: Peel Excavation Services website\")",
+      "Bash(git config *)",
+      "Bash(git remote *)",
+      "Bash(brew --version)"
     ]
   }
 }
