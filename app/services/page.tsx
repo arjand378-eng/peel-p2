@@ -109,8 +109,8 @@ const services = [
       "Coordination with pool contractors and landscapers",
       "Protection of existing landscaping, fencing, and hardscaping",
     ],
-    img: "/images/service-photos/pool-excavation.jpg",
-    imgAlt: "Precision excavation for an in-ground pool installation",
+    img: "/images/services/pool-excavation.jpg",
+    imgAlt: "Freshly excavated residential backyard swimming pool dig with stepped depth and survey stakes",
   },
   {
     id: "site-preparation",
@@ -128,8 +128,8 @@ const services = [
       "Residential subdivision pad preparation",
       "Erosion and sediment control setup",
     ],
-    img: "/images/service-photos/site-preparation.jpg",
-    imgAlt: "Heavy equipment preparing a large construction site",
+    img: "/images/services/site-preparation.jpg",
+    imgAlt: "Build-ready commercial lot fully prepped, rough-graded, and staked, ready for foundation work",
   },
   {
     id: "land-grading",

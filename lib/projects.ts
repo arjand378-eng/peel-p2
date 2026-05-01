@@ -26,7 +26,7 @@ export const projects: Project[] = [
     gallery: [
       "/images/service-photos/foundation-excavation.jpg",
       "/images/IMG_8780.JPG",
-      "/images/IMG_8781.JPG",
+      "/images/services/caledon-result.jpg",
     ],
     summary:
       "Engineered foundation cut on a steep grade in Caledon. Delivered to spec, on schedule, ready for the framing crew.",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     hero: "/images/IMG_8777.JPG",
     gallery: [
       "/images/IMG_8777.JPG",
-      "/images/IMG_8782.JPG",
+      "/images/IMG_8779.JPG",
       "/images/IMG_8785.JPG",
     ],
     summary:

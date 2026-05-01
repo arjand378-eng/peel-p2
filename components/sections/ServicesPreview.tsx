@@ -8,7 +8,7 @@ const services = [
     title: "Foundation Excavation",
     desc: "Precision foundation digs for residential and commercial builds. Footings, full basements, and below-grade structures dug to engineer specs, on schedule.",
     href: "/services#foundation-excavation",
-    img: "https://images.pexels.com/photos/30354001/pexels-photo-30354001.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    img: "/images/services/foundation-excavation.jpg",
     span: "lg:col-span-2 lg:row-span-2",
     feature: true,
   },
@@ -16,7 +16,7 @@ const services = [
     title: "Site Preparation",
     desc: "Full site clearing, grading, and rough prep before any build begins.",
     href: "/services#site-preparation",
-    img: "/images/photos/pexels-pixabay-162624.jpg",
+    img: "/images/services/site-preparation.jpg",
   },
   {
     title: "Demolition",
@@ -28,7 +28,7 @@ const services = [
     title: "Basement Digging",
     desc: "Walkout basements, full digs, and below-grade extensions to spec.",
     href: "/services#basement-digging",
-    img: "/images/photos/pexels-peter-dyllong-2158803154-36815365.jpg",
+    img: "/images/services/basement-digging.jpg",
   },
   {
     title: "Trenching & Utilities",
@@ -46,19 +46,19 @@ const services = [
     title: "Lot Clearing",
     desc: "Trees, stumps, brush, and debris cleared. Site ready from day one.",
     href: "/services#lot-clearing",
-    img: "/images/photos/pexels-zante-7080010.jpg",
+    img: "/images/services/lot-clearing.jpg",
   },
   {
     title: "Pool Excavation",
     desc: "Clean, precise pool digs for residential and commercial properties.",
     href: "/services#pool-excavation",
-    img: "https://images.pexels.com/photos/15138925/pexels-photo-15138925.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    img: "/images/services/pool-excavation.jpg",
   },
   {
     title: "Concrete Removal",
     desc: "Breaking and hauling concrete slabs, driveways, foundations, and walls.",
     href: "/services#concrete-removal",
-    img: "https://images.pexels.com/photos/4523602/pexels-photo-4523602.jpeg?auto=compress&cs=tinysrgb&w=1920",
+    img: "/images/services/concrete-removal.jpg",
   },
 ];
 

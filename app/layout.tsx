@@ -30,6 +30,12 @@ export const metadata: Metadata = {
     "30+ years of excavation experience. Foundation digging, demolition, site preparation & grading across Mississauga, Milton, Oakville, Burlington, Hamilton, Vaughan, Markham & Caledon. Owner-operated fleet. Licensed & insured.",
   keywords:
     "excavation contractors GTA, foundation excavation Mississauga, demolition Milton, site preparation Oakville, basement digging Burlington, grading Hamilton, excavation Vaughan, land clearing Markham, excavation Caledon",
+  icons: {
+    icon: [
+      { url: "/logo/peel-badge.png", type: "image/png" },
+    ],
+    apple: [{ url: "/logo/peel-badge.png" }],
+  },
   openGraph: {
     type: "website",
     locale: "en_CA",
@@ -38,6 +44,21 @@ export const metadata: Metadata = {
     title: "Peel Excavation Services | Foundation Excavation & Demolition Contractors | GTA",
     description:
       "30+ years of excavation experience. Owner-operated fleet serving contractors and builders across Mississauga, Milton, Oakville, Burlington, Hamilton, Vaughan, Markham & Caledon.",
+    images: [
+      {
+        url: "/logo/peel-lockup.png",
+        width: 1254,
+        height: 1254,
+        alt: "Peel Excavation Services",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Peel Excavation Services | Foundation Excavation & Demolition Contractors | GTA",
+    description:
+      "30+ years of excavation experience. Owner-operated fleet serving contractors and builders across the GTA.",
+    images: ["/logo/peel-lockup.png"],
   },
 };
 

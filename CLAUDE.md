@@ -4,9 +4,10 @@
 Paid client project for **Peel Excavation Services** — excavation, demolition, and site prep company serving the GTA and beyond.
 
 **Sales contact:** Manny Dhanoa (handles inbound inquiries — do NOT name him as owner on the site)
+**Real business owner:** "Jasper" (the actual excavation operator). Manny is acting as a lead-gen middleman representing Jasper's business. Jasper does NOT directly know about / participate in this website setup — keep this in mind for any GBP/LSA/license-verified marketing options.
 **Phone:** 647-321-9437 (click-to-call, mobile priority)
 **Email:** info@peelexcavation.ca (not Gmail — already set up)
-**Experience est.:** ~1995 (30+ years in the trade) | **Company registered:** 2014 — use EST. 1995 on site, not 2014
+**Experience est.:** ~1995 (30+ years in the trade) | **Company registered:** — use EST. 1995 on site, not
 **Primary market:** Contractors, builders, property managers, commercial clients — NOT generic homeowners
 **Service area:** Mississauga, Milton, Oakville, Burlington, Hamilton, Vaughan, Richmond Hill, Markham, Caledon, Bolton, Georgetown + Ontario-wide / Quebec for large-scale projects
 **Logo:** Not designed yet — SVG placeholder (`P` badge) in code until delivered
@@ -61,24 +62,28 @@ Paid client project for **Peel Excavation Services** — excavation, demolition,
 
 ---
 
-## Pages Built (Current State — 2026-04-29)
-1. **Home** — Hero (video, dark frosted backdrop behind CTAs), TrustMarquee, ServicesPreview (9 bento cards → /services), WhyUs/Stats with 3-image collage including operator-in-cab photo, Projects (2x2), QuoteCTA, Footer
-2. **Services** — All 15 services live with expanded copy (4–6 sentence descriptions, 8 bullets each). 9 client-supplied photos placed in `/public/images/service-photos/` (foundation, basement, pool, site-prep, land-grading, trenching, concrete-removal, lot-clearing, drainage). Remaining 6 sections (garage, final-grading, demolition, backfilling, heavy-equipment, general) still on Pexels/older client photos.
-3. **About** — Built, needs contractor-first copy pass
-4. **Blog** — SEO placeholder
-5. **Contact** — Multi-step form
+## Current Status (post-launch)
+Site is **live** on Cloudflare Pages. Pages: Home, Services (all 15), About, Projects, Blog (SEO placeholder), Contact (multi-step form). Nav: Services · Projects · About · Contact.
 
-**Nav links:** Services · Projects · About · Contact
+**Outstanding work (post-launch fix list):**
 
-## Readability Tuning Log (Home page)
-- ServicesPreview "What We Do" body → `text-xl md:text-2xl` full opacity (was `text-base/lg` at 85%)
-- Hero CTA row → wrapped in `hsl(60 7% 5% / 0.6) + blur(6px)` frosted backdrop so phone number reads over any video frame
-- WhyUs About paragraphs → iterated `text-xl/2xl` (too big) → `text-lg/xl` → current `text-base lg:text-lg font-normal leading-[1.85]`
+*Quick wins (~15 min each):*
+- Add Home link in nav bar; wrap the `P` logo badge in `<Link href="/">` so it returns to home
+- Show phone number + email on mobile contact form (currently hidden on mobile)
+- Remove the "man standing" photo on the Caledon Custom Home Foundation project page (`/projects/caledon-custom-home-foundation`) — unprofessional shot
+- Fix mobile hero video — `hero.mp4` is showing as a static poster on iOS. Likely missing `playsInline` + `muted` attrs on the `<video>` element
 
-## Next Up
-1. Final About section copy/tone pass (contractor-first)
-2. Possibly add blog content or new landing pages
-3. Go live → SEO audit → iterate
+*Bigger items:*
+- 6 service sections still on Pexels/older photos and need real client photos: garage, final-grading, demolition, backfilling, heavy-equipment, general excavation
+- About page copy/tone pass (contractor-first voice)
+- Post-launch SEO audit (use `seo-audit` skill once quick wins are merged)
+- New **Equipment page** for Manny's fleet (route: `/equipment`, mirror Services page structure)
+- Update Blog placeholder pages with real SEO content (use `blog-write` skill)
+- Logo design — initial concept generated via GPT-5.5 image. User has the image file from that session and will provide it for integration. Until then, current site uses the `P` badge SVG placeholder.
+
+*Domain / hosting status:*
+- Site is on Cloudflare Pages default subdomain (`peel-p2.pages.dev`)
+- Custom domain NOT yet purchased — Manny was supposed to buy it; this has stalled (see MARKETING-STRATEGY.md for the full client situation)
 
 ---
 
@@ -102,13 +107,7 @@ Paid client project for **Peel Excavation Services** — excavation, demolition,
 - **Accent:** `#f59e0b` (amber) → HSL `38 92% 50%` — CTAs, borders, highlights
 - **Secondary:** `#78716c` (stone mid-tone)
 - **Easing:** `cubic-bezier(0.16, 1, 0.3, 1)`
-- **Imagery:** Dark, cinematic, earth-toned. Real job site photos only — no stock photos of fake workers.
-
----
-
-## Hero Video Status
-**HOLD — pending client confirmation.**
-Manny's brief says "no autoplay videos" but this conflicts with the current hero.mp4. Leave hero video in place until Manny is asked directly and confirms. If he says remove it, replace with a Ken Burns static photo.
+- **Imagery:** Dark, cinematic, earth-toned. Real job site photos only 
 
 ---
 
@@ -133,7 +132,7 @@ Manny's brief says "no autoplay videos" but this conflicts with the current hero
 1. CSS Keyframes — micro-animations, hover states
 2. Framer Motion — page transitions, component enter/exit
 3. GSAP + ScrollTrigger — scroll sequences, staggered reveals
-4. No Spline in hero. No autoplay video (pending confirmation).
+4. No Spline in hero.
 
 ---
 
@@ -159,18 +158,29 @@ Read these skill files before every UI task:
 ---
 
 ## Project File Locations
-- **Project root:** `/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/`
-- **Next.js app:** same root (NOT in a `peel-p2/` subfolder — was moved up)
-- **Client photos:** `public/images/IMG_8777.JPG` through `IMG_8787.JPG`
+- **Project root:** `/Users/arjan/Documents/CLAUDE PRACTICE/WEBSITE PRACTICE/Peel P2/` (Next.js app lives at the root)
+- **Client photos:** `public/images/` (IMG_8777, 8779, 8784 currently used in code)
+- **Service photos:** `public/images/service-photos/` (9 client-supplied, named by service)
 - **Stock photos:** `public/images/photos/` (pexels, used in ServicesPreview)
 - **Hero video:** `public/video/hero.mp4`
-- **GitHub repo:** `arjand378-eng/peel-p2`
+- **GitHub repo:** `arjand378-eng/peel-p2` (deploys to Cloudflare Pages)
+
+### File Storage Policy (STRICT)
+**ALL project-related files MUST be saved inside this project folder. NEVER write to `~/.claude/` or any user-level Claude directory.**
+
+This includes — but is not limited to — plans, notes, scratch files, image prompts, drafts, generated assets, transcripts, and any working artifacts produced during a session.
+
+- **Plans** → save to `./plans/` inside the project (create the folder if it doesn't exist), NOT `~/.claude/plans/`
+- **Generated assets** → save to `./public/` or appropriate project subfolder, NOT `~/.claude/`
+- **Notes / scratch / drafts** → save to `./notes/` inside the project, NOT `~/.claude/`
+- **Memory files** are the only exception — `MEMORY.md` and its referenced files live in the user-level memory directory by design
+
+Why: keeping everything inside the project folder means it travels with the repo, is visible in version control, and is recoverable from the project itself rather than scattered across system-level Claude directories. The user has flagged this multiple times across sessions — treat it as non-negotiable.
 
 ---
 
 ## What Client Does NOT Want
-- No stock photos of fake workers
-- No autoplay videos (pending confirmation)
+- No autoplay videos (current hero.mp4 is the exception — confirm with Manny before adding any others)
 - No pop-ups
 - No cluttered or busy layouts
 - No cheap-looking design

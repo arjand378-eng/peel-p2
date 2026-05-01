@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const links = [
@@ -31,13 +32,15 @@ export function Navbar() {
       }`}
     >
       <nav className="container-narrow flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 group">
-          <span className="w-8 h-8 bg-gradient-amber flex items-center justify-center text-primary-foreground text-display text-xl">
-            P
-          </span>
-          <span className="text-display text-xl tracking-widest text-foreground">
-            PEEL <span className="text-primary">EXCAVATION</span>
-          </span>
+        <Link href="/" className="flex items-center group" aria-label="Peel Excavation Services — home">
+          <Image
+            src="/logo/peel-wordmark.png"
+            alt="Peel Excavation Services"
+            width={1448}
+            height={1086}
+            priority
+            className="h-14 md:h-16 w-auto"
+          />
         </Link>
 
         <ul className="hidden md:flex items-center gap-10">

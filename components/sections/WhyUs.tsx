@@ -90,8 +90,8 @@ export function WhyUs() {
                 {/* Primary tall image — left column, full height */}
                 <div className="relative row-span-2 overflow-hidden border border-border">
                   <Image
-                    src="https://images.pexels.com/photos/13931828/pexels-photo-13931828.jpeg?auto=compress&cs=tinysrgb&w=1920"
-                    alt="Excavator mid-dig on a deep foundation cut"
+                    src="/images/services/excavation-deep-pit.jpg"
+                    alt="Deep foundation excavation pit with stepped footing and exposed soil strata"
                     fill
                     className="object-cover"
                     sizes="25vw"
@@ -102,8 +102,8 @@ export function WhyUs() {
                 {/* Top-right image */}
                 <div className="relative overflow-hidden border border-border">
                   <Image
-                    src="https://images.pexels.com/photos/8961251/pexels-photo-8961251.jpeg?auto=compress&cs=tinysrgb&w=1920"
-                    alt="Equipment operator in excavator cab on active job site"
+                    src="/images/services/excavation-tracks.jpg"
+                    alt="Heavy machinery track marks on freshly excavated soil with survey stakes"
                     fill
                     className="object-cover"
                     sizes="25vw"
@@ -114,8 +114,8 @@ export function WhyUs() {
                 {/* Bottom-right image */}
                 <div className="relative overflow-hidden border border-border">
                   <Image
-                    src="https://images.pexels.com/photos/4523602/pexels-photo-4523602.jpeg?auto=compress&cs=tinysrgb&w=1920"
-                    alt="Aerial view of large-scale earthmoving and site preparation"
+                    src="/images/services/graded-pad.jpg"
+                    alt="Freshly graded and compacted commercial building pad with roller compactor track marks"
                     fill
                     className="object-cover"
                     sizes="25vw"

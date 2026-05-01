@@ -107,7 +107,7 @@ export default function AboutPage() {
             <Reveal delay={200} className="relative">
               <div className="relative aspect-[4/5] overflow-hidden border border-border">
                 <Image
-                  src="/about-picture.jpg"
+                  src="/images/about-picture.jpg"
                   alt="Aerial view of an active commercial construction job site"
                   fill
                   className="object-cover"

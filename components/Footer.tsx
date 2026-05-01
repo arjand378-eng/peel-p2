@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, Mail } from "lucide-react";
 
 const links = [
@@ -14,13 +15,14 @@ export function Footer() {
     <footer className="bg-background border-t border-border">
       <div className="container-narrow py-14">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 items-center">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="w-8 h-8 bg-gradient-amber flex items-center justify-center text-primary-foreground text-display text-xl">
-              P
-            </span>
-            <span className="text-display text-xl tracking-widest">
-              PEEL <span className="text-primary">EXCAVATION</span>
-            </span>
+          <Link href="/" className="flex items-center" aria-label="Peel Excavation Services — home">
+            <Image
+              src="/logo/peel-wordmark.png"
+              alt="Peel Excavation Services"
+              width={1448}
+              height={1086}
+              className="h-12 w-auto"
+            />
           </Link>
 
           <ul className="flex flex-wrap gap-6 md:gap-8 md:justify-center">
