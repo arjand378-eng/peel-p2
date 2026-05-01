@@ -45,8 +45,8 @@ export default function ContactPage() {
         {/* Left panel — info + photo */}
         <div className="relative hidden lg:flex flex-col justify-end overflow-hidden">
           <Image
-            src="https://images.pexels.com/photos/1078884/pexels-photo-1078884.jpeg?auto=compress&cs=tinysrgb&w=1920"
-            alt="Heavy equipment on a contractor job site"
+            src="/images/services/excavation-deep-pit.jpg"
+            alt="Deep foundation excavation pit ready for build"
             fill
             className="object-cover"
             priority
@@ -60,13 +60,14 @@ export default function ContactPage() {
             }}
           />
           <div className="relative z-10 p-12 pb-16">
-            <div className="flex items-center gap-2 mb-10">
-              <span className="w-8 h-8 bg-gradient-amber flex items-center justify-center text-primary-foreground text-display text-xl">
-                P
-              </span>
-              <span className="text-display text-xl tracking-widest text-foreground">
-                PEEL <span className="text-primary">EXCAVATION</span>
-              </span>
+            <div className="mb-10">
+              <Image
+                src="/logo/peel-wordmark.png"
+                alt="Peel Excavation Services"
+                width={600}
+                height={450}
+                className="h-14 w-auto"
+              />
             </div>
             <h2 className="text-display text-4xl text-foreground mb-3">
               Let's Talk About

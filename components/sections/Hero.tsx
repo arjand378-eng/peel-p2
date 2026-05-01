@@ -1,50 +1,24 @@
-"use client";
-
-import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 export function Hero() {
-  const [showVideo, setShowVideo] = useState(false);
-
-  useEffect(() => {
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const conn = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } })
-      .connection;
-    const saveData = !!conn?.saveData;
-    const slowConn = conn?.effectiveType === "2g" || conn?.effectiveType === "slow-2g";
-
-    if (!reduceMotion && !saveData && !slowConn) {
-      setShowVideo(true);
-    }
-  }, []);
-
   return (
     <section
       id="top"
       className="relative h-screen min-h-[640px] w-full overflow-hidden bg-background"
     >
-      {/* Background — poster (frame 1 of hero.mp4) paints instantly, video fades in seamlessly */}
       <div className="absolute inset-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: "url('/video/hero-poster.jpg')" }}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          className="absolute inset-0 w-full h-full object-cover"
           aria-hidden="true"
-        />
-        {showVideo && (
-          <video
-            autoPlay
-            muted
-            loop
-            playsInline
-            preload="metadata"
-            poster="/video/hero-poster.jpg"
-            className="absolute inset-0 w-full h-full object-cover"
-            aria-hidden="true"
-          >
-            <source src="/video/hero.mp4" type="video/mp4" />
-          </video>
-        )}
+        >
+          <source src="/video/hero.mp4" type="video/mp4" />
+        </video>
         {/* Top vignette — keeps navbar readable over any video frame */}
         <div
           className="absolute inset-0"
