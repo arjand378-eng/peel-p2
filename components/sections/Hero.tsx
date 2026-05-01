@@ -9,13 +9,12 @@ export function Hero() {
 
   useEffect(() => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-    const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
     const conn = (navigator as Navigator & { connection?: { saveData?: boolean; effectiveType?: string } })
       .connection;
     const saveData = !!conn?.saveData;
     const slowConn = conn?.effectiveType === "2g" || conn?.effectiveType === "slow-2g";
 
-    if (!reduceMotion && isDesktop && !saveData && !slowConn) {
+    if (!reduceMotion && !saveData && !slowConn) {
       setShowVideo(true);
     }
   }, []);
